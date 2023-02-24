@@ -1,0 +1,455 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+
+* {
+margin: 0;
+padding: 0;
+color: white;
+}
+
+html {
+width: 100%;
+height: 100%;
+}
+
+
+body {
+max-height: 1200px;
+min-width: 100%;
+overflow-x: hidden; /* Hide horizontal scrollbar */
+
+}
+
+nav {
+display: flex;
+justify-content: flex-end;
+top: 0;
+left: 0;
+background: black;
+width: 100%;
+height: 70px;
+box-shadow: 0 5px 0 rgb(19, 18, 18);
+position: fixed;
+z-index: 4;
+}
+
+#nav-list {
+display: flex;
+margin-right: 2rem;
+}
+
+ul {
+list-style-type: none;
+font-family: sans-serif;
+font-weight: bold;
+}
+
+#nav-list  a {
+display: block;
+font-size: 25px;
+padding: 20px 2rem;
+}
+
+ul a {
+text-decoration: none;
+color: white;
+}
+
+ul a:hover {
+background: rgb(31, 31, 31)
+}
+/* WELCOME SECTION STYLES BEGIN HERE */
+
+#welcome-section {
+width: 100%;
+height: 650px;
+background: rgb(31, 31, 31);
+z-index: 1;
+}
+/* Hello Kitty animation styles begin here */
+
+.kitty {
+width: 300px;
+height: 300px;
+margin: auto;
+position: relative;
+transition: transform 1s ease-in-out 0ms;
+
+}
+
+.kitty * {
+position: absolute;
+}
+
+.kitty-head {
+width: 60%;
+height: 46%;
+background: white;
+border-radius: 80% 80% 65% 65%;
+top: 50%;
+left: 25%;
+z-index: 3;
+border: 7px solid black;
+}
+
+.eye {
+width: 15px;
+height: 20px;
+background: black;
+border-radius: 60%;
+top: 55%;
+z-index: 4;
+}
+
+.eye.left {
+left: 35px
+}
+
+.eye.right {
+right: 35px
+}
+
+.nose {
+width: 12px;
+height: 6px;
+background: #fdcf00;
+border-radius: 60%;
+top: 67%;
+left: 45%;
+border: 4px solid black;
+z-index: 4;
+}
+
+.whiskers1 {
+width: 40px;
+height: 0;
+background: black;
+border: 2px solid black;
+border-radius: 30%;
+}
+
+.whiskers2 {
+width: 30px;
+height: 0;
+background: black;
+border: 2px solid black;
+border-radius: 30%;
+}
+
+.whiskers3 {
+width: 40px;
+height: 0;
+background: black;
+border: 2px solid black;
+border-radius: 30%;
+}
+
+.whiskers1.left {
+top: 75px;
+left: -30px;
+transform: skew(-5deg, 0deg);
+}
+
+.whiskers2.left {
+top: 91px;
+left: -20px;
+transform: skew(-5deg, -10deg);
+}
+
+.whiskers3.left {
+top: 105px;
+left: -30px;
+transform: skew(-5deg, -20deg)
+}
+
+.whiskers1.right {
+top: 75px;
+right: -30px;
+transform: skew(5deg, -5deg);
+}
+
+.whiskers2.right {
+top: 94px;
+right: -20px;
+transform: skew(5deg, 20deg)
+}
+
+.whiskers3.right {
+top: 105px;
+right: -30px;
+transform: skew(5deg, 20deg)
+}
+
+.bow {
+background: #ea1266;
+border: 6px solid black;
+z-index: 4;
+}
+
+.side-bow1 {
+width: 33px;
+height: 50px;
+border-radius: 50% 50% 50% 50%;
+right: 55px;
+top: -20px;
+transform: rotate(15deg);
+}
+
+.side-bow2 {
+width: 33px;
+height: 50px;
+border-radius: 50% 50% 50% 50%;
+right: -8px;
+top: -3px;
+transform: rotate(15deg);
+}
+
+.inner-bow {
+width: 55px;
+height: 10px;
+border-radius: 35%;
+right: 15px;
+transform: rotate(12deg);
+top: 10px;
+}
+
+.circle {
+width: 30px;
+height: 30px;
+border-radius: 50%;
+right: 27px;
+top: -1px;
+}
+
+.ear {
+border: 7px solid black;
+background: white;
+z-index: 2;
+}
+
+.ear.left {
+width: 43px;
+height: 53px;
+transform: rotate(-80deg);
+top: 140px;
+left: 75px;
+border-radius: 50% 12% 50% 17%;
+}
+
+.ear.right {
+width: 43px;
+height: 53px;
+border-radius: 12% 50% 17% 50%;
+transform: rotate(80deg);
+top: 135px;
+left: 210px;
+}
+
+.kitty-body {
+width: 45%;
+height: 40%;
+background: #ea1266;
+border-radius: 100% 100% 25% 25%;
+top: 83%;
+left: 32.5%;
+border: 7px solid black;
+z-index: 2;
+}
+
+.arm {
+width: 50px;
+height: 85px;
+background: white;
+border: 7px solid black;
+}
+
+.arm.left {
+top: 265px;
+left:  65px;
+transform: rotate(40deg);
+border-radius: 90% 0 45% 45%;
+}
+
+.arm.right {
+left: 220px;
+top: 250px;
+transform: rotate(-125deg);
+border-radius: 90% 0 45% 45%;
+animation: 3s linear infinite wave;
+}
+
+@keyframes wave {
+10% {
+transform: rotate(-120deg);
+}
+20% {
+transform: rotate(-140deg);
+}
+30% {
+transform: rotate(-120deg);
+}
+40% {
+transform: rotate(-135deg);
+}
+}
+
+.leg {
+width: 63px;
+height: 50px;
+background: white;
+border: 7px solid black;
+}
+
+.leg.left {
+top: 350px;
+left: 100px;
+border-radius: 100% 20% 20% 50%
+}
+
+.leg.right {
+top: 350px;
+left: 165px;
+border-radius: 20% 100% 50% 20%;
+}
+/* end of hello kitty animation styles */
+
+#welcome-section > h1, h3 {
+text-align: center;
+position: relative;
+top: 140px;
+color: white
+}
+
+#welcome-section > h1 {
+font-size: 50px;
+font-family: 'Great Vibes', cursive;
+left: 20px;
+}
+
+#welcome-section > h3 {
+font-size: 30px;
+font-family: sans-serif;
+left: 30px;
+}
+/*projects section styles */
+
+.project-tile {
+width: 100%;
+height: 350px;
+background: black;
+text-align: center;
+}
+
+.projects > h1 {
+font-family: sans-serif;
+display: block;
+text-align: center;
+text-decoration: underline;
+position: relative;
+top: 40px;
+}
+/* add your #projects-position class here */
+
+.project-tile {
+display: flex;
+justify-content: space-around;
+}
+
+#project-image {
+width: 300px;
+height: auto;
+margin-top: 100px;
+}
+
+.project-title {
+font-family: sans-serif;
+font-size: 1.2rem;
+}
+
+p {
+display: block;
+position: relative;
+top: 15px;
+}
+
+#contact {
+width: 100%;
+height: 200px;
+background: black;
+text-align: center;
+opacity: 91%;
+}
+
+hr {
+max-width: 100%;
+height: 2px;
+}
+
+#contact > h1 {
+font-family: sans-serif;
+font-size: 40px;
+position: relative;
+top: 20px;
+}
+
+.contact-me {
+display: flex;
+justify-content: space-evenly;
+font-family: sans-serif;
+font-size: 30px;
+position: relative;
+top: 70px;
+list-style-type: none;
+text-shadow: 4px 4px 2px rgb(31, 31, 31);
+}
+
+
+
+@keyframes bounce {
+    0%   { transform: scale(1,1) translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-55px);}
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    58%  { transform: scale(1,1) translateY(-7px); }
+    65%  { transform: scale(1,1) translateY(0);}
+    100% { transform: scale(1,1) translateY(0);}
+}
+
+.email {
+animation: bounce 1s ease infinite;
+}
+
+.git {
+animation: bounce 1s ease infinite .1s;
+}
+
+.ln {
+animation: bounce 1s ease infinite .2s;
+}
+
+ol a {
+text-decoration: none;
+}
+
+ol a:hover {
+text-shadow: 4px 4px 1px rgb(109, 69, 90);
+}
+
+footer {
+width: 100%;
+height: 50px;
+background: black;
+display: flex;
+justify-content: flex-end;
+padding: 1rem;
+position: relative;
+right: 20px;
+font-family: sans;
+}
+
+footer > p {
+color: gray;
+}
