@@ -16,4 +16,4 @@ Here are the requirements:
 10) The height of the welcome section should be equal to the height of the viewport
 11) The navbar should always be at the top of the viewport
 
-Whilst it wasn't required, I decided to add some animations to the beginning and ending of my project. This allowed me to practice and becomne more comfortable with CSS animation.
+Whilst it wasn't required, I decided to add some animations to the beginning and ending of my project. This allowed me to practice and become more comfortable with CSS animation.
