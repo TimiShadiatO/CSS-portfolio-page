@@ -1,5 +1,9 @@
 # CSS-portfolio-page
-My last certification project was to build a webpage portfolio of my CSS projects
+My last certification project was to build a webpage portfolio of my CSS projects.
+
+You can access the functioning site here:
+
+https://timiodeyemi-portfolio.netlify.app/
 
 For my CSS certificate, i had to code a wedpage portfolio that displayed my projects and linked to my girhub. 
 
